@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Slug weaponry -->
+
+  <ResearchProjectDef>
+    <defName>SlugThrowers</defName>
+
+    <label>SlugThrowers</label>
+    <description>Craft high power yet
+      basic SlugThrowers.</description>
+    <tab>StarWars_Armory</tab>
+    <baseCost>1800</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>PrecisionRifling</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>
+      0.00</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->slugthrowers</li>
+
+        <li>subject_story->improved ballistic weapon manufacturing, enabling the
+          production of high power slugthrowers</li>
+        <li>subject_story->was hunted by storm troopers but acquired a slugthrower rifle to
+          safely
+          eliminate their commander</li>
+
+        <li>subject_gerund->crafting slugthrowers</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>

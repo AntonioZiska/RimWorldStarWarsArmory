@@ -5,10 +5,8 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_SlugThrowerPistol">
     <defName>AandA_Gun_SlugThrowerPistol</defName>
     <label>SlugThrower Pistol</label>
-    <description>A pistol variant of a standard SlugThrower.
-      used in places where blasters were uncommon.
-      the SlugThrowers use slugs as standard ammunition.
-    </description>
+    <description>A pistol variant of a standard SlugThrower. used in places where blasters were
+      uncommon. the SlugThrowers use slugs as standard ammunition.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/SlugThrowerPistol</texPath>
@@ -32,7 +30,7 @@
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
-      <displayPriority>200</displayPriority>
+      <displayPriority>201</displayPriority>
     </recipeMaker>
     <costList>
       <Plasteel>30</Plasteel>
@@ -68,7 +66,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>11</power>
+        <power>9</power>
         <cooldownTime>1</cooldownTime>
       </li>
       <li>
@@ -91,8 +89,9 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>18</damageAmountBase>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <speed>90</speed>
     </projectile>
   </ThingDef>
