@@ -2,31 +2,32 @@
 <Defs>
 
 
-  <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_SlugThrower">
-    <defName>Gun_ChargeRifle</defName>
-    <label>charge rifle</label>
-    <description>A charged-shot assault rifle. Pulse-charge technology charges each shot with
-      unstable energy as it leaves the barrel. Released on impact, the charged energy greatly
-      increases the damage done.</description>
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="Gun_SlugThrowerPistol">
+    <defName>AandA_Gun_SlugThrowerPistol</defName>
+    <label>SlugThrower Pistol</label>
+    <description>A pistol variant of a standard SlugThrower.
+      used in places where blasters were uncommon.
+      the SlugThrowers use slugs as standard ammunition.
+    </description>
     <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/SlugThrowerPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <soundInteract>Interact_SlugThrowerPistol</soundInteract>
     <statBases>
-      <WorkToMake>45000</WorkToMake>
-      <Mass>4.6</Mass>
-      <AccuracyTouch>0.55</AccuracyTouch>
-      <AccuracyShort>0.64</AccuracyShort>
+      <WorkToMake>22500</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.55</AccuracyMedium>
       <AccuracyLong>0.45</AccuracyLong>
-      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>SlugThrowers</researchPrerequisite>
       <skillRequirements>
-        <Crafting>7</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -34,8 +35,8 @@
       <displayPriority>200</displayPriority>
     </recipeMaker>
     <costList>
-      <Plasteel>50</Plasteel>
-      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
@@ -53,14 +54,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
+        <defaultProjectile>Bullet_Slug</defaultProjectile>
         <warmupTime>1.0</warmupTime>
-        <range>27.9</range>
-        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <burstShotCount>3</burstShotCount>
-        <soundCast>Shot_ChargeRifle</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <range>24.9</range>
+        <soundCast>Shot_SlugThrowerPistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -69,8 +68,8 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <power>11</power>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -84,17 +83,17 @@
     </tools>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_ChargeRifle</defName>
-    <label>charge shot</label>
+    <defName>Bullet_Slug</defName>
+    <label>Slug</label>
     <graphicData>
-      <texPath>Things/Projectile/Charge_Small</texPath>
+      <texPath>Things/Projectile/Slug</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>16</damageAmountBase>
-      <armorPenetrationBase>0.35</armorPenetrationBase>
-      <speed>70</speed>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>90</speed>
     </projectile>
   </ThingDef>
 
