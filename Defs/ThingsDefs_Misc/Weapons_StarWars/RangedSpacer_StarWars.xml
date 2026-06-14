@@ -9,7 +9,7 @@
       uncommon. the SlugThrowers use slugs as standard ammunition.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/SlugThrowerPistol</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged_StarWars/SlugThrowerPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_SlugThrowerPistol</soundInteract>
@@ -53,8 +53,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Slug</defaultProjectile>
-        <warmupTime>1.0</warmupTime>
-        <range>24.9</range>
+        <warmupTime>1.2</warmupTime>
+        <range>26.9</range>
         <soundCast>Shot_SlugThrowerPistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
@@ -80,6 +80,8 @@
       </li>
     </tools>
   </ThingDef>
+  <!-- slug type bullet can and should be reused for slugthrowers just needs fine tuning for stats
+  (<defaultProjectile>Bullet_Slug</defaultProjectile>)-->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_Slug</defName>
     <label>Slug</label>
