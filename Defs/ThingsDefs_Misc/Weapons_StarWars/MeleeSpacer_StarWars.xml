@@ -1,6 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_VibroKnife</defName>
+    <label>vibroknife</label>
+    <techLevel>Spacer</techLevel>
+    <description>Much like a regular knife except that is capable of vibrating at high frequencies. Cutting through flesh and all but the strongest armour like butter.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+    <weaponTags>
+      <li>SpacerMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <costStuffCount>100</costStuffCount>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedStatOffsets>
+      <ButcheryFleshSpeed>0.5</ButcheryFleshSpeed>
+      <ButcheryFleshEfficiency>0.3</ButcheryFleshEfficiency>
+      <MedicalTendQualityOffset>0.2</MedicalTendQualityOffset>
+    </equippedStatOffsets>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <armorPenetration>0.70</armorPenetration>
+        <cooldownTime>1.5</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.2</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>13</power>
+        <armorPenetration>0.70</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>5</amount>
+            <chance>0.2</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <displayPriority>310</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>MeleeWeapon_Mace</defName>
     <label>mace</label>
